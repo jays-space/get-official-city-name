@@ -4,11 +4,11 @@
   "description": "Service that takes in a city name and returns the full and official name of that city",
   "main": "handler.js",
   "scripts": {
-    "test": "test"
+    "test": "jest --watch"
   },
   "author": "jay mondlana",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.0.3"
   }
 }

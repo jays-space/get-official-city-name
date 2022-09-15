@@ -1,15 +1,11 @@
-'use strict';
+"use strict";
 
-module.exports.hello = async (event) => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Serverless v3.0! Your function executed successfully!',
-        input: event,
-      },
-      null,
-      2
-    ),
-  };
+const validateCityName = require("./validateCityName");
+
+module.exports.getCityName = async (event) => {
+  try {
+    return validateCityName(event.city);
+  } catch (e) {
+    return e;
+  }
 };
