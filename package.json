@@ -1,0 +1,14 @@
+{
+  "name": "getcityname",
+  "version": "1.0.0",
+  "description": "Service that takes in a city name and returns the full name of the city",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jay mondlana",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.0.3"
+  }
+}
