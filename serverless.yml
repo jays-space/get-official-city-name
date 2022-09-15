@@ -1,4 +1,4 @@
-service: GetCityName
+service: GetOfficialCityName
 
 frameworkVersion: '3'
 
