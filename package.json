@@ -1,6 +1,6 @@
 {
   "name": "get-official-city-name",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Service that takes in a city name and returns the full and official name of that city",
   "main": "handler.js",
   "scripts": {
