@@ -5,15 +5,15 @@ phases:
     commands:
       - echo Installing Serverless...
       - npm i -g serverless
-    pre_build:
-      commands:
-        - echo Installing source NPM dependencies...
-        - npm install
-    build:
-      commands:
-        - echo Deployment started on `date`
-        - echo Deploying with Serverless Framework
-        - sls deploy -v -s $ENV_STAGE
-    post_build:
-      commands:
-        - echo Deployment completed on `date`
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Deployment started on `date`
+      - echo Deploying with Serverless Framework
+      - sls deploy -v -s $ENV_STAGE
+  post_build:
+    commands:
+      - echo Deployment completed on `date`
